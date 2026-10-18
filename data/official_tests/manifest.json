@@ -1,0 +1,15 @@
+{
+  "kind": "recorded_official_response",
+  "recall_number": "D-0047-2025",
+  "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0047-2025%22&limit=1",
+  "retrieved_at": "2026-10-17T15:23:40.178210+00:00",
+  "response_file": "openfda_D-0047-2025.response.json",
+  "sha256": "dcd7f543c153595148d19afda555da75485b157f028079fefcb01522354fdb9f",
+  "medicine": {
+    "name": "IBU",
+    "strength": "600 mg",
+    "batch_no": "C5406201"
+  },
+  "different_batch": "SYNTHETIC-NOT-RECALLED-001",
+  "note": "Real openFDA response; synthetic household. Snapshot is historical, not a current-status guarantee."
+}

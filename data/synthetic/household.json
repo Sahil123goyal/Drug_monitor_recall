@@ -1,0 +1,9 @@
+{
+  "household_id": "00000000-0000-4000-8000-000000000001",
+  "medicines": [
+    {"name": "DemoBrand-A", "strength": "10 mg", "batch_no": "SYN-0001"},
+    {"name": "DemoBrand-A", "strength": "10 mg", "batch_no": "SYN-0002"},
+    {"name": "DemoBrand-B", "strength": "25 mg", "batch_no": null}
+  ]
+}
+

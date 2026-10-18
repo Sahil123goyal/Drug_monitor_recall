@@ -1,0 +1,10 @@
+{
+  "kind": "synthetic_status_transition",
+  "label": "FIXTURE ONLY: simulated Ongoing -> Terminated status; not an observed FDA withdrawal",
+  "base_manifest": "manifest.json",
+  "before": {"status": "Ongoing"},
+  "after": {"status": "Terminated"},
+  "changed_fields": ["status"],
+  "semantics": "Terminated means recall closure under FDA criteria, not withdrawal or a statement that a medicine is safe. The official link supports the baseline record, not this simulated transition.",
+  "reference": "https://www.fda.gov/safety/enforcement-reports/enforcement-report-information-and-definitions"
+}

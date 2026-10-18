@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2026-10-07",
+    "results": {
+      "skip": 0,
+      "limit": 1,
+      "total": 1
+    }
+  },
+  "results": [
+    {
+      "status": "Ongoing",
+      "city": "Princeton",
+      "state": "NJ",
+      "country": "United States",
+      "classification": "Class III",
+      "openfda": {
+        "application_number": [
+          "ANDA075682"
+        ],
+        "brand_name": [
+          "IBU"
+        ],
+        "generic_name": [
+          "IBUPROFEN"
+        ],
+        "manufacturer_name": [
+          "Dr. Reddy's Laboratories Limited"
+        ],
+        "product_ndc": [
+          "55111-682",
+          "55111-683",
+          "55111-684"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "substance_name": [
+          "IBUPROFEN"
+        ],
+        "rxcui": [
+          "197805",
+          "197806",
+          "197807",
+          "206905",
+          "206913",
+          "206917"
+        ],
+        "spl_id": [
+          "a7977972-4353-9ca0-d419-e37039010e7d"
+        ],
+        "spl_set_id": [
+          "24731405-219c-79b4-ecf0-7d5fbfda94ba"
+        ],
+        "package_ndc": [
+          "55111-682-09",
+          "55111-682-01",
+          "55111-682-05",
+          "55111-683-30",
+          "55111-683-50",
+          "55111-683-09",
+          "55111-683-01",
+          "55111-683-05",
+          "55111-684-30",
+          "55111-684-50",
+          "55111-684-60",
+          "55111-684-09",
+          "55111-684-01",
+          "55111-684-05"
+        ],
+        "is_original_packager": [
+          true
+        ],
+        "nui": [
+          "N0000000160",
+          "M0001335",
+          "N0000175722"
+        ],
+        "pharm_class_moa": [
+          "Cyclooxygenase Inhibitors [MoA]"
+        ],
+        "pharm_class_cs": [
+          "Anti-Inflammatory Agents, Non-Steroidal [CS]"
+        ],
+        "pharm_class_epc": [
+          "Nonsteroidal Anti-inflammatory Drug [EPC]"
+        ],
+        "unii": [
+          "WK2XYI10QM"
+        ]
+      },
+      "product_type": "Drugs",
+      "event_id": "95620",
+      "recalling_firm": "Dr. Reddy's Laboratories, Inc.",
+      "address_1": "107 College Rd E",
+      "address_2": "N/A",
+      "postal_code": "08540-6623",
+      "voluntary_mandated": "Voluntary: Firm initiated",
+      "initial_firm_notification": "N/A",
+      "distribution_pattern": "USA Nationwide",
+      "recall_number": "D-0047-2025",
+      "product_description": "IBU (ibuprofen) 600 mg tablets, 500-count bottle, Rx Only,  Distributor: Dr. Reddy's Laboratories Inc., Princeton, NJ 08540, Made in India, NDC 55111-683-05",
+      "product_quantity": "3416 botttles",
+      "reason_for_recall": "Failed Tablet/Capsule Specifications",
+      "recall_initiation_date": "20241029",
+      "center_classification_date": "20241115",
+      "report_date": "20241127",
+      "code_info": "Lot #: C5406201, Exp 03/31/2028"
+    }
+  ]
+}
