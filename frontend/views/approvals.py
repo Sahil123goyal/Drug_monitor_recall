@@ -94,6 +94,13 @@ def pending_review(identifier: UUID) -> None:
             with st.container(border=True):
                 st.subheader(item.get("verdict", "Decision"))
                 st.write(item.get("reason") or "No reason recorded.")
+                extraction_labels = {
+                    "validated": "Groq extraction passed validation; verdict calculated by rules.",
+                    "unusable": "Groq extraction failed validation or could not resolve the missing evidence.",
+                    "missing_configuration": "Groq extraction was enabled but its key or model was not configured.",
+                }
+                if item.get("extraction_status") in extraction_labels:
+                    st.caption(extraction_labels[item["extraction_status"]])
                 if item.get("notice_date"):
                     st.caption(f"Notice date: {item['notice_date']}")
                 if url:

@@ -42,6 +42,7 @@ class GroqSettings(BaseSettings):
 
     model_config = Settings.model_config.copy()
 
+    groq_extraction_enabled: bool = False
     groq_api_key: SecretStr = SecretStr("")
     groq_model: str = ""
     groq_timeout_seconds: float = Field(default=15.0, gt=0, allow_inf_nan=False)

@@ -63,8 +63,9 @@ LANGSMITH_ENDPOINT=https://api.smith.langchain.com
 The runtime loads `.env` for tracing. LangGraph records nodes, interrupts, and
 resumes automatically, with run/thread metadata. Traces include workflow inputs
 and evidence; this project uses synthetic households. Tracing remains off by
-default. Groq credentials are optional for the separate extraction function;
-the graph's deterministic matching path does not need them.
+default. Groq extraction is opt-in for uncertain notices; see
+[Render configuration and deployment](groq-deployment.md). Groq extracts public
+notice fields only, and the deterministic matcher still supplies every verdict.
 
 References: [LangGraph interrupts](https://reference.langchain.com/python/langgraph/types/interrupt)
 and [PostgreSQL checkpointer](https://pypi.org/project/langgraph-checkpoint-postgres/).

@@ -17,7 +17,7 @@ from app.agents.repository import WorkflowRepository
 from app.models.enums import ActionStatus, Verdict, VerificationResult
 from app.schemas.medicine import Medicine
 from app.schemas.notice import Notice
-from app.services.matcher import match
+from app.services.notice_matching import match_notice
 from app.services.verification import OpenFDAVerifier
 from app.sources.base import SourceAdapter
 
@@ -81,7 +81,7 @@ def build_graph(
         thread_id = str(config["configurable"]["thread_id"])
         for snapshot in state["notices"]:
             notice = Notice.model_validate(snapshot["data"])
-            result = match(medicine, notice)  # The LLM cannot supply a verdict.
+            result = match_notice(medicine, notice)  # Groq extracts facts; rules choose the verdict.
             stable_id = uuid5(NAMESPACE_URL, json.dumps(
                 ["drug-monitor-decision", thread_id, state["medicine_id"], snapshot["id"]]
             ))
@@ -108,6 +108,7 @@ def build_graph(
                 "reason": decision.reason,
                 "notice_url": notice.get("url"),
                 "notice_date": notice.get("report_date"),
+                "extraction_status": decision.evidence.get("extraction_status"),
             })
         error = None
         while True:
